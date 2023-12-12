@@ -1,0 +1,27 @@
+<h2>Liste des étudiants hors-Paris</h2>
+<table>
+    <tr>
+        <th>id</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Rue</th>
+        <th>Code Postal</th>
+        <th>Ville</th>
+        <th>Courriel</th>
+        <th>Genre</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let etudiant of tabEtud">
+        <ng-container *ngIf="etudiant.cp != '75000'">
+            <td>N°{{etudiant.idCand}}</td>
+            <td>{{etudiant.nom}}</td>
+            <td>{{etudiant.prenom}}</td>
+            <td>{{etudiant.rue}}</td>
+            <td>{{etudiant.cp}}</td>
+            <td>{{etudiant.ville}}</td>
+            <td>{{etudiant.courriel}}</td>
+            <td>{{etudiant.genre}}</td>
+            <td>{{etudiant.age}}</td>
+        </ng-container>
+    </tr>
+</table>

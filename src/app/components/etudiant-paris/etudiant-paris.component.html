@@ -1,0 +1,29 @@
+<img src="assets/paris_lmao.jpg" alt="paris">
+
+<h2>Liste des étudiants Paris</h2>
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Rue</th>
+        <th>Code Postal</th>
+        <th>Ville</th>
+        <th>Courriel</th>
+        <th>Genre</th>
+        <th>Age</th>
+        <th>id</th>
+    </tr>
+    <tr *ngFor="let etudiant of tabEtud">
+        <ng-container *ngIf="etudiant.cp == '75000'">
+            <td>{{etudiant.nom}}</td>
+            <td>{{etudiant.prenom}}</td>
+            <td>{{etudiant.rue}}</td>
+            <td>{{etudiant.cp}}</td>
+            <td>{{etudiant.ville}}</td>
+            <td>{{etudiant.courriel}}</td>
+            <td>{{etudiant.genre}}</td>
+            <td>{{etudiant.age}}</td>
+            <td>{{etudiant.idCand}}</td>
+        </ng-container>
+    </tr>
+</table>

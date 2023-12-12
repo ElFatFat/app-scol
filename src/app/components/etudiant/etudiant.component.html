@@ -1,0 +1,25 @@
+<h2>Liste des étudiants</h2>
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Rue</th>
+        <th>Code Postal</th>
+        <th>Ville</th>
+        <th>Courriel</th>
+        <th>Genre</th>
+        <th>Age</th>
+        <th>id</th>
+    </tr>
+    <tr *ngFor="let etudiant of tabEtud">
+        <td>{{etudiant.nom}}</td>
+        <td>{{etudiant.prenom}}</td>
+        <td>{{etudiant.rue}}</td>
+        <td>{{etudiant.cp}}</td>
+        <td>{{etudiant.ville}}</td>
+        <td>{{etudiant.courriel}}</td>
+        <td>{{etudiant.genre}}</td>
+        <td>{{etudiant.age}}</td>
+        <td>{{etudiant.idCand}}</td>
+    </tr>
+</table>
