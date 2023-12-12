@@ -9,6 +9,9 @@
     color: white;
     padding-right: 1em;
 }
+#spacer{
+    height: 80px;
+}
 
 h1{
     text-align: center;
